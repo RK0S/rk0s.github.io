@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintJs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="left">
+                
+            </div>
+            <div class="center">
+                <div class="return-actions">
+                    <button class="tools__btn btn" id="backCanvas">Отменить действие</button>
+                </div>
+                <div class="canvas__block">
+                    <canvas id="jsCanvas" class="canvas"></canvas>
+                </div>
+            </div>
+            <div class="right">
+                <div id="picker"></div>
+                <ul class="last-colors">
+                    <li class="color last-color" id="last-color0">
+                        <input type="checkbox" class="color__input" id="color__input1" name="color__post">
+                        <label for="color__input1"><img src="img/plus.png" alt="plus"></label>
+                    </li>
+                    <li class="color last-color" id="last-color1">
+                        <input type="checkbox" class="color__input" id="color__input2" name="color__post">
+                        <label for="color__input2"><img src="img/plus.png" alt="plus"></label>
+                    </li>
+                    <li class="color last-color" id="last-color2">
+                        <input type="checkbox" class="color__input" id="color__input3" name="color__post">
+                        <label for="color__input3"><img src="img/plus.png" alt="plus"></label>
+                    </li>
+                    <li class="color last-color" id="last-color3">
+                        <input type="checkbox" class="color__input" id="color__input4" name="color__post">
+                        <label for="color__input4"><img src="img/plus.png" alt="plus"></label>
+                    </li>
+                </ul>
+                <div class="find-color">
+                    <input type="text" class="find-color__input" placeholder="#ffffff">
+                    <button  class="find-color__btn btn">Найти цвет</button>
+                </div>
+                <div class="choosed-colors">
+                    <ul class="choosed-colors__first-line">
+                        <li class="color" name="color__get" id="choosed-color0">
+                            <input type="checkbox" class="color__input" id="color__choosed1" checked name="color__get__input">
+                            <label for="color__choosed1"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color1">
+                            <input type="checkbox" class="color__input" id="color__choosed2" checked name="color__get__input">
+                            <label for="color__choosed2"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color2">
+                            <input type="checkbox" class="color__input" id="color__choosed3" checked name="color__get__input">
+                            <label for="color__choosed3"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color3">
+                            <input type="checkbox" class="color__input" id="color__choosed4" checked name="color__get__input">
+                            <label for="color__choosed4"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                    </ul>
+                    <ul class="choosed-colors__second-line">
+                        <li class="color" name="color__get" id="choosed-color4">
+                            <input type="checkbox" class="color__input" id="color__choosed5" checked name="color__get__input">
+                            <label for="color__choosed5"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color5">
+                            <input type="checkbox" class="color__input" id="color__choosed6" checked name="color__get__input">
+                            <label for="color__choosed6"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color6">
+                            <input type="checkbox" class="color__input" id="color__choosed7" checked name="color__get__input">
+                            <label for="color__choosed7"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                        <li class="color" name="color__get" id="choosed-color7">
+                            <input type="checkbox" class="color__input" id="color__choosed8" checked name="color__get__input">
+                            <label for="color__choosed8"><img src="img/minus.png" alt="minus"></label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="current-brush">
+                    <input type="range" class="current-brush__range" id="jsRange" min="1" max="30" value="5" step="0.2"">
+                    <div class="current-brush__color">
+                        <div class="color" id="current-color" style="background-color: #2c2c2c;"></div>
+                    </div>
+                </div>
+                <div class="tools">
+                    <button class="tools__btn btn" id="drawing" >Рисование</button>
+                    <button class="tools__btn btn" id="ruller" >Ластик</button>
+                    <button class="tools__btn btn" id="get-pixel">Пипетка</button>
+                    <button class="tools__btn btn" id="fill-bg">Закрасить фон</button>
+                    <button class="tools__btn btn" id="save">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
